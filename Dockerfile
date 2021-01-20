@@ -15,7 +15,7 @@ RUN apt-get -q update && apt-get install -qy unzip \
     rm -rf /tmp/*
 
 RUN wget --no-check-certificate \
-      https://install.service-now.com/glide/distribution/builds/package/mid/2020/05/07/mid.newyork-06-26-2019__patch7b-04-30-2020_05-07-2020_2135.linux.x86-64.zip \
+      https://install.service-now.com/glide/distribution/builds/package/app-signed/mid/2020/11/06/mid.paris-06-24-2020__patch3-10-29-2020_11-06-2020_1142.linux.x86-64.zip \
       -O /tmp/mid.zip && \
     unzip -d /opt /tmp/mid.zip && \
     mv /opt/agent/config.xml /opt/ && \
